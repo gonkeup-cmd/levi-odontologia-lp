@@ -365,7 +365,7 @@ a { color: inherit; text-decoration: none; }
   clip-path: inset(0 50% 0 0);
   transition: clip-path 0.05s linear;
 }
-.compare__side svg { width: 65%; }
+.compare__side svg { width: 92%; }
 .compare__tag {
   position: absolute;
   top: 1rem;
