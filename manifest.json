@@ -1,0 +1,13 @@
+{
+  "name": "Levi Odontologia",
+  "short_name": "Levi Odontologia",
+  "description": "Lentes de contato dental, implantes e próteses em Itapema, SC.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf6f1",
+  "theme_color": "#9c4d3a",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
