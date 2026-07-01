@@ -39,7 +39,7 @@
     if (reduceMotion) {
       dismiss();
     } else {
-      window.setTimeout(dismiss, 1100);
+      window.setTimeout(dismiss, 1400);
     }
   } else {
     revealHero();

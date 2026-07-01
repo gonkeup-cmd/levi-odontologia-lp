@@ -29,11 +29,43 @@
   transition: opacity 0.6s var(--ease), visibility 0.6s var(--ease);
 }
 .intro.is-done { opacity: 0; visibility: hidden; pointer-events: none; }
+.intro__ring-wrap {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro__ring {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-90deg);
+}
+.intro__ring-track {
+  fill: none;
+  stroke: rgba(255,255,255,0.12);
+  stroke-width: 2.5;
+}
+.intro__ring-fill {
+  fill: none;
+  stroke: rgba(255,255,255,0.80);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 264;
+  stroke-dashoffset: 264;
+  animation: ringClose 0.65s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.1s;
+}
+@keyframes ringClose {
+  to { stroke-dashoffset: 0; }
+}
 .intro__logo {
+  position: relative;
+  z-index: 1;
   filter: brightness(0) invert(1);
   opacity: 0;
   transform: scale(0.85);
-  animation: introLogoIn 0.7s var(--ease) forwards 0.15s;
+  animation: introLogoIn 0.45s var(--ease) forwards 0.78s;
 }
 @keyframes introLogoIn {
   to { opacity: 1; transform: scale(1); }

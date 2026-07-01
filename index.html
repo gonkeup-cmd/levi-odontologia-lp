@@ -19,7 +19,13 @@
 <body>
 
 <div class="intro" id="intro" aria-hidden="true">
-  <img src="assets/icon.svg" alt="" width="64" height="64" class="intro__logo">
+  <div class="intro__ring-wrap">
+    <svg class="intro__ring" viewBox="0 0 100 100" width="96" height="96" aria-hidden="true">
+      <circle class="intro__ring-track" cx="50" cy="50" r="42"/>
+      <circle class="intro__ring-fill" cx="50" cy="50" r="42"/>
+    </svg>
+    <img src="assets/icon.svg" alt="" width="44" height="44" class="intro__logo">
+  </div>
 </div>
 <div class="grain" aria-hidden="true"></div>
 
