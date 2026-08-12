@@ -401,7 +401,7 @@ a { color: inherit; text-decoration: none; }
 }
 .about__inner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1.35fr;
   gap: 3rem;
   align-items: center;
 }
@@ -437,7 +437,7 @@ a { color: inherit; text-decoration: none; }
 }
 @media (max-width: 860px) {
   .about__inner { grid-template-columns: 1fr; gap: 1.5rem; }
-  .about__visual { order: -1; }
+  .about__visual { order: -1; aspect-ratio: 4/3.4; margin: 0 -1.5rem; border-radius: 0; }
 }
 
 /* Spotlight */
